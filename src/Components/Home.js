@@ -1,12 +1,12 @@
 import React from 'react'
 import Header from './Header'
-function Contact() {
+function Home() {
   return (
     <div>
         <Header></Header>
-      Contact meee
+      Home Pagee
     </div>
   )
 }
 
-export default Contact
+export default Home
