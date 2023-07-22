@@ -8,7 +8,7 @@ import Services from './Services';
 function Home() {
   return (
     <>
-      <Header />
+      <Header  />
       <div id="homeSection">
         <img src="images/intro-page.jpg" className="img-responsive img-fluid myimg" alt='' />
       </div>
