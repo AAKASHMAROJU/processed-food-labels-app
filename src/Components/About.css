@@ -1,103 +1,77 @@
-/* Global styles */
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans", sans-serif;
-    box-sizing: border-box;
+/* Global styles or styles for the entire page can go here */
+
+body {
+    margin: 0; /* Reset default body margin */
+    font-family: 'Quicksand', sans-serif; /* Set a default font for the entire page */
   }
   
-  body {
-    min-height: 100vh;
+  .container {
+    height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
+    justify-content: center; /* Center the content horizontally */
+    background-color: #f9f9f9; /* Light background color */
   }
   
-  /* About section */
-  .about-section {
-    background: linear-gradient(to right, #ff9a9e, #fad0c4); /* Gradient with pink and light pink */
-    background-repeat: no-repeat;
-    background-size: 52%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    height: 100%;
-    padding: 100px 0;
+  .image-container {
+    flex: 1;
+    margin-right: 2rem; /* Add some space between the image and content */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the image */
+    border-radius: 10px; /* Rounded corners for the image container */
+    overflow: hidden; /* Hide any overflow content */
   }
   
-  /* Inner container */
-  .inner-container {
-    width: 55%;
-    float: right;
-    background: linear-gradient(to right, #bdc3c7, #2c3e50); /* Gradient with silver and dark slate gray */
-    padding: 150px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  img {
+    width: 100%; /* Make the image responsive and fill the container */
   }
   
-  .inner-container h1 {
-    margin-bottom: 30px;
-    font-size: 30px;
-    font-weight: 900;
-    color: #1f62aa;
+  .content-container {
+    flex: 1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow to the content */
+    border-radius: 10px; /* Rounded corners for the content container */
+    background-color: #ffffff; /* White background for the content */
+    padding: 2rem; /* Add some padding to the content */
   }
   
-  .text {
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+  h1.title {
+    font-family: 'Pacifico', cursive;
+    color: #212529;
+    font-size: 2.5rem;
+    margin-bottom: 1rem; /* Add some space below the title */
+    text-align: center; /* Center align the title */
   }
   
-  /* Skills section */
-  .skills {
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 20px;
+  .form-group.message {
+    margin-bottom: 2rem; /* Add some space below the text area */
   }
   
-  /* Media queries */
-  @media screen and (max-width: 1200px) {
-    .inner-container {
-      padding: 80px;
-    }
+  .form-control {
+    background-color: #f2f6f8;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+    padding: 1rem 2rem; /* Increase padding for a better appearance */
+    width: 100%; /* Make the text area full width */
+    resize: none; /* Disable textarea resizing */
   }
   
-  @media screen and (max-width: 1000px) {
-    .about-section {
-      background-size: 100%;
-      padding: 100px 40px;
-    }
-    .inner-container {
-      width: 100%;
-    }
+  .btn.btn-primary {
+    font-weight: bold;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 3rem;
+    border: 0;
+    border-radius: 3rem;
+    background-image: linear-gradient(131deg, #ffd340, #ff923c, #ff923c, #ff923c);
+    background-size: 300% 100%;
+    transition: all 0.3s ease-in-out;
+    display: block; /* Make the button a block element */
+    margin: 0 auto; /* Center the button */
   }
   
-  @media screen and (max-width: 600px) {
-    .about-section {
-      padding: 0;
-    }
-    .inner-container {
-      padding: 60px;
-    }
-  }
-  
-  /* Styled span elements */
-  span {
-    cursor: pointer;
-    font-size: 16px;
-    text-align: center;
-    padding: 10px;
-    width: 500px;
-    background: linear-gradient(to right, #ff6e7f, #bfe9ff); /* Gradient with salmon pink and baby blue */
-    color: #fff;
-    border-radius: 20px;
-    transition: 0.5s;
-  }
-  
-  span:hover,
-  .active {
-    background: linear-gradient(to right, #fc5c7d, #6a82fb); /* Gradient with pale violet red and slate blue */
+  .btn.btn-primary:hover:enabled {
+    box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+    background-size: 100% 100%;
+    transform: translateY(-0.15em);
   }
   
