@@ -1,17 +1,28 @@
 import React from 'react';
-import About from './About';
+import './Home.css';
 import Header from './Header';
+import About from './About';
 import Contact from './Contact';
+import Services from './Services';
+
 function Home() {
   return (
-    <div >
-    <Header></Header>
-    <img src="images/intro-page.jpg"   className="img-responsive img-fluid" alt=''/>
-    <About></About>
-    <Contact></Contact>
-
-  </div>
-  )
+    <>
+      <Header />
+      <div id="homeSection">
+        <img src="images/intro-page.jpg" className="img-responsive img-fluid myimg" alt='' />
+      </div>
+      <div id="aboutSection">
+        <About />
+      </div>
+      <div id="servicesSection">
+        <Services />
+      </div>
+      <div id="contactSection">
+        <Contact />
+      </div>
+    </>
+  );
 }
 
-export default Home
+export default Home;
