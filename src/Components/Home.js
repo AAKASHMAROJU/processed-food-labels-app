@@ -1,12 +1,14 @@
 import React from 'react';
-// import About from './About';
-// import Services from './Services';
-// import Contact from './Contact';
+import About from './About';
+import Header from './Header';
+import Contact from './Contact';
 function Home() {
   return (
-    <div className="col-xs-12 col-lg-12">
-    
+    <div >
+    <Header></Header>
     <img src="images/intro-page.jpg"   className="img-responsive img-fluid" alt=''/>
+    <About></About>
+    <Contact></Contact>
 
   </div>
   )
