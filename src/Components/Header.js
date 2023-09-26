@@ -13,10 +13,10 @@ function Header() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light" style={headerStyles}>
+    <nav className="navbar navbar-expand-lg navbar-light bg-primary" style={headerStyles}>
       <div className="container-fluid">
         <a className="navbar-brand" href="#homeSection">
-          FPLC
+          Processed Food Labels Capture
         </a>
         <button
           className="navbar-toggler"
@@ -62,6 +62,8 @@ function Header() {
 const headerStyles = {
   width: '100%',
   display: 'flex',
+  position: 'fixed',
+  background: 'cyan',
   justifyContent: 'space-between',
   alignItems: 'center',
   paddingLeft: '20px',
